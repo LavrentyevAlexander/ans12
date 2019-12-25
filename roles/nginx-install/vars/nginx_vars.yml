@@ -1,0 +1,4 @@
+---
+nginx_max_connections: 2048
+nginx_sendfile: "on"
+nginx_tcp_nodelay: "on"

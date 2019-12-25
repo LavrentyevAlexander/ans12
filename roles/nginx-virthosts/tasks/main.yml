@@ -1,0 +1,18 @@
+---
+- name: Creating virtual host http {{inventory_hostname}} for nginx
+  template: 
+          src: virt_host.http.conf.j2 
+          dest: /etc/nginx/sites-enabled/{{inventory_hostname}}.conf 
+          owner: root 
+          group: root 
+          mode: 0644
+  notify: restarting nginx
+
+- name: Adding site {{inventory_hostname}}
+  template:
+          src: index.html.j2
+          dest: /var/www/html/index.html
+          owner: root
+          group: root
+          mode: 0644
+  notify: restarting nginx

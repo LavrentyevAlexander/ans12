@@ -1,0 +1,10 @@
+---
+- hosts: balancers
+  roles:
+    - name: nginx-install
+    - name: nginx-loadbalancer
+
+- hosts: sites
+  roles:
+    - name: nginx-install
+    - name: nginx-virthosts

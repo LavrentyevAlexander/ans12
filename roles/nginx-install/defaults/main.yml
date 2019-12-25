@@ -1,0 +1,8 @@
+---
+hash_bucket_size: 64
+nginx_user: "www-data"
+worker_processes: "auto"
+nginx_max_connections: "768"
+nginx_sendfile: "off"
+nginx_tcp_nodelay: "off"
+nginx_tcp_nopush: "off"

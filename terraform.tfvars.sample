@@ -1,0 +1,12 @@
+# AWS_credentials
+aws_my_access_key = ""
+aws_my_secret_key = ""
+
+do_token = ""
+
+lavrentyev_key_name = "Rambo"
+
+dr_load = ["las-load"]
+
+dr_virt = ["las-virt"]
+
